@@ -11,6 +11,7 @@
 	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/spritesheet.css">
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -19,12 +20,9 @@
 	<div class="wrapper">
 
 		<header class="header">
-			<div class="container">
+			<div class="container-header">
 				<a href="http://www.dariakuznetsova.ru" class="logo">
 					<img src="/images/logo.png" alt="Логотип" class="logo-img">
-					<!--<span class="logo-text">
-						Loftschool. От мыслителя к создателю.
-					</span>-->
 				</a>
 				<ul class="socials">
 					<li class="social-item">
@@ -50,17 +48,70 @@
 				</ul>
 			</div>
 		</header>
+		<div class="left_div"></div>
+		<div class="right_div"></div>
+		<!-- <div id="line"><img src="/images/line1.png" alt=""></div> -->
 
-		<div class="content">
-			<div class="container">
-				<div class="sidebar"></div>
-				<div class="content-area"></div>	
+		<div class="container-content">
+			<div class="content">
+				
+				<div class="sidebar">
+					<ul class="menu">
+						<li class="li_menu" id="about_me"><span class="pointer">Обо мне</span></li>
+						<li class="li_menu" id="my_works"><span class="pointer">Мои работы</span></li>
+						<li class="li_menu" id="contact_me"><span class="pointer">Связаться со мной</span></li>
+					</ul>
+					<ul class="contacts">
+						<li class="li_contacts" id="contacts"><span class="pointer">Контакты</span></li>
+						<li class="li_contacts" id="email"><span href="#" class="pointer">kds2108@list.ru</span></li>
+						<li class="li_contacts" id="telephone"><span href="#" class="pointer">+7 900 631 9943</span></li>
+						<li class="li_contacts" id="skype"><span href="#" class="pointer">kds_2108</span></li>
+					</ul>
+				</div>
+				
+				<div class="content-area">
+					<div class="main-information">
+						<div class="basic_info">Основная информация</div>
+						<div id="line3"><img src="/images/line3.png" alt=""></div>
+						<div class="photo"></div>
+						<div class="information_list">
+							<p class="text"><span class="bold">Меня зовут: </span> Кузнецова Дарья Сергеевна</p>
+							<p class="text"><span class="bold">Мой возраст: </span> 28 лет</p>
+							<p class="text"><span class="bold">Мой город: </span> Санкт-Петербург, Россия</p>
+							<p class="text"><span class="bold">Моя специализация: </span> FRONTEND разработчик</p>
+							<div class="text_div">
+								<p class="bold first_bold">Ключевые навыки: </p>
+								<p class="inline">
+									<span class="skills">html</span>
+									<span class="skills">css</span>
+									<span class="skills">javascript</span>
+									<span class="skills">gulp</span>
+									<span class="skills">git</span>
+								</p>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="work-experience"></div>
+					
+					<div class="education"></div>
+				</div>	
 			</div>
 		</div>
 
 	</div>
 
-	<!--<footer class="footer"><span>&copy; 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span></footer>-->
+	<!--<footer class="footer">
+		<div class="container-footer">
+			<div class="lock">
+				<a href="#" class="locked">
+					<img src="images/locked.png" alt="Войти">
+				</a>
+			</div>
+			<div class="copyright">&copy; 2016. Это сайт Дарьи Кузнецовой, пожалуйста, не копируйте и не воруйте его</div>
+		</div>
+	</footer>-->
 
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="js/main.js"></script>

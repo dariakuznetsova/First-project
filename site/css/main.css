@@ -4,30 +4,32 @@
 
 html, body {
 	height: 100%;
-	width: 100%;
+
 }
 
 body {
     background: url(/images/pattern.png);
-	margin: 0px;
-	font-family: Arial Narrow, sans-serif;
+    width: 100%;
+    font-family: 'fira_sansbook', sans-serif;
 }
 
-#wrapper {
+.wrapper {
+	position: relative;
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	display: table;
 }
 
 .header {
 	background: #eff3f7;
 	height: 116px;
-	padding-top: 35px;
+	margin-bottom: -14px;
 }
 
-.container {
+.container-header {
 	width: 1200px;
 	margin: auto;
+	padding-top: 39px;
 }
 
 .logo, .socials, .social-item {
@@ -39,20 +41,263 @@ body {
 	float: right;
 	margin: 0;
 	font-size: 0px;
+	margin-top: -4px;
 }
 
 .social-item {
 	margin-left: 24px;
 }
 
+.left_div, .right_div {
+	display: inline-block;
+	height: 3px;
+	width: 50%;
+}
+
+.left_div {
+	background: linear-gradient(to right, #e7eff3, #1c667a);
+}
+
+.right_div {
+	background: linear-gradient(to left, #e7eff3, #1c667a);
+}
+
+/*#line {
+	margin-top: -14px;
+	margin-bottom: 31px;
+}*/
+
+/*При таком коде линия залезает на хэдер!!
 .header:after {
-	content: ""
+	content: url(/images/line.png);
+}*/
+
+.container-content {
+	margin-top: 31px;
 }
 
+.content {
+	width: 960px;
+	margin: auto;
+}
 
+.sidebar, .content-area {
+	display: inline-block;
+}
 
+.sidebar {
+	width: 250px;
+	/*min-height: 218px;*/
+}
 
-
-.footer {
+.menu {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
 	background: #eff3f7;
+	color: #959aa8;
+	font-size: 21px;
+	border-radius: 5px 5px 5px 5px;
+	margin-bottom: 23px;
 }
+
+.li_menu {
+	height: 73px;
+	line-height: 73px;
+	padding-left: 28px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+#my_works:hover, #contact_me:hover {
+	color: #3ba8c0;
+}
+
+#about_me {
+	background: #3ba8c0;
+	color: white;
+	font-size: 23px;
+	border-radius: 5px 5px 0px 0px;	
+}
+
+#my_works, #contact_me {
+	background: #eff3f7;
+	color: #959aa8;
+}
+
+.li_menu:last-child {
+	border-radius: 0px 0px 5px 5px;
+}
+
+.contacts {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	font-size: 17px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.li_contacts {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 21px;
+	color: white;
+}
+
+#contacts {
+	background: #3ba8c0;
+	font-size: 21px;
+	border-radius: 5px 5px 0px 0px;	
+}
+
+#email {
+	background: #41b9d4;
+	padding-left: 44px;
+}			
+
+#email:before {
+	content: url(/images/email.png);
+	padding-right: 20px;
+}
+
+#telephone {
+	background: #48cbe8;
+	padding-left: 44px;
+}
+
+#telephone:before {
+	content: url(/images/tel.png);
+	padding-right: 20px;
+}
+
+#skype {
+	background: #51daf8;
+	padding-left: 44px;
+	border-radius: 0px 0px 5px 5px;
+}
+
+#skype:before {
+	content: url(/images/skype.png);
+	width: 80%;
+	height: 80%;
+	padding-right: 20px;
+}
+
+
+.content-area {
+	width: 650px;
+	float: right;
+}
+
+.main-information, .work-experience, .education {
+	background-color: #eff3f7;
+	border-radius: 5px;
+	padding-top: 13px;
+}
+
+.main-information {
+	min-height: 320px;
+}
+
+.basic_info {
+	font-size: 27px;
+	color: #3ba8c0;
+	padding-left: 22px;
+}
+
+#line3 {
+	margin-top: -3px;
+	margin-bottom: 27px;
+}
+
+.photo {
+	margin-left: 55px;
+	margin-right: 23px;
+	border-radius: 75px;
+	width: 150px;
+	height: 150px;
+	border: 3px solid #3ba8c0;
+	overflow: hidden;
+	background-image: url("/images/pic1.jpg");
+	background-position: 33% 0%;
+	float: left;
+
+}
+
+.information_list {
+	float: left;
+	margin-top: -27px;
+}
+
+.text {
+	font-size: 15px;
+	color: #4a545d;
+	line-height: 18px;
+}
+
+.bold {
+	font-family: "fira_sansmedium", sans-serif;
+	font-size: 17px;
+	color: #4a545d;
+}
+
+.skills {
+	text-align: center;
+	border-radius: 3px;
+	color: white;
+	font-family: "ProximaNovaCond-Semibold", sans-serif;
+	font-size: 14px;
+	padding: 2px 14px 1px 14px;
+	margin-right: 4px;
+	background: #2e8ca2;
+	box-shadow: inset 0px 9px 0px #3ba8c0;
+}
+
+.text_div {
+	margin-top: -20px;
+}
+
+.first_bold {
+	float: left;
+	margin-right: 21px;
+}
+
+.inline {
+	float: right;
+	width: 235px;
+	margin-top: 21px;
+}
+
+
+
+
+/*.list {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	font-size: 21px;
+}
+*/
+
+
+
+
+
+/*.footer {
+	background: #eff3f7;
+	height: 77px;
+	width: 100%;
+	clear: both;
+	position: absolute;
+}
+
+.container-footer {
+	margin: auto;
+	width: 660px;
+}
+
+.lock, .copyright {
+	display: inline-block;
+}*/

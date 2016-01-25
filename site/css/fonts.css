@@ -140,10 +140,10 @@
 
 @font-face {
     font-family: 'fira_sansbook';
-    src: url('firasans-book.eot');
-    src: url('firasans-book.eot?#iefix') format('embedded-opentype'),
-         url('firasans-book.woff') format('woff'),
-         url('firasans-book.ttf') format('truetype');
+    src: url('/fonts/firasans-book.eot');
+    src: url('/fonts/firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-book.woff') format('woff'),
+         url('/fonts/firasans-book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -180,10 +180,10 @@
 
 @font-face {
     font-family: 'fira_sansmedium';
-    src: url('firasans-medium.eot');
-    src: url('firasans-medium.eot?#iefix') format('embedded-opentype'),
-         url('firasans-medium.woff') format('woff'),
-         url('firasans-medium.ttf') format('truetype');
+    src: url('/fonts/firasans-medium.eot');
+    src: url('/fonts/firasans-medium.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-medium.woff') format('woff'),
+         url('/fonts/firasans-medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -314,6 +314,16 @@
     src: url('firamono-regular.eot?#iefix') format('embedded-opentype'),
          url('firamono-regular.woff') format('woff'),
          url('firamono-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaCond-Semibold';
+    src: url('/fonts/proximanovacond-semibold.eot');
+    src: url('/fonts/proximanovacond-semibold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanovacond-semibold.woff') format('woff'),
+         url('/fonts/proximanovacond-semibold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
