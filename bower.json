@@ -1,0 +1,23 @@
+{
+  "name": "\"site\"",
+  "authors": [
+    "Daria Kuznetsova <kds2108@list.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.12.0",
+    "normalize-css": "normalize.css#~3.0.3",
+    "modernizer": "~2.8.2"
+  }
+}

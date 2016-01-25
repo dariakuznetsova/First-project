@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+    background: url(/images/pattern.png);
+	margin: 0px;
+	font-family: Arial Narrow, sans-serif;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.header {
+	background: #eff3f7;
+	height: 116px;
+	padding-top: 35px;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
+.logo, .socials, .social-item {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.socials {
+	float: right;
+	margin: 0;
+	font-size: 0px;
+}
+
+.social-item {
+	margin-left: 24px;
+}
+
+.header:after {
+	content: ""
+}
+
+
+
+
+
+.footer {
+	background: #eff3f7;
+}
