@@ -5,15 +5,15 @@
 }
 
 .sprite-case {
-    width: 36px;
-    height: 34px;
-    background-position: -10px -10px;
+    width: 40px;
+    height: 50px;
+    background-position: -9px 6px;
 }
 
 .sprite-email {
-    width: 21px;
-    height: 16px;
-    background-position: -66px -10px;
+    width: 23px;
+    height: 40px;
+    background-position: -64px 1px;
 }
 
 .sprite-fb {
@@ -37,15 +37,15 @@
 }
 
 .sprite-hat {
-    width: 41px;
-    height: 23px;
+    width: 45px;
+    height: 30px;
     background-position: -144px -77px;
 }
 
 .sprite-list {
-    width: 26px;
-    height: 32px;
-    background-position: -144px -120px;
+    width: 49px;
+    height: 45px;
+    background-position: -138px -108px;
 }
 
 .sprite-locked {
@@ -61,9 +61,9 @@
 }
 
 .sprite-tel {
-    width: 19px;
-    height: 21px;
-    background-position: -62px -172px;
+    width: 25px;
+    height: 30px;
+    background-position: -59px -162px;
 }
 
 .sprite-tw {

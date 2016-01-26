@@ -48,73 +48,120 @@
 				</ul>
 			</div>
 		</header>
-		<div class="left_div"></div>
-		<div class="right_div"></div>
-		<!-- <div id="line"><img src="/images/line1.png" alt=""></div> -->
 
-		<div class="container-content">
 			<div class="content">
 				
 				<div class="sidebar">
 					<ul class="menu">
-						<li class="li_menu" id="about_me"><span class="pointer">Обо мне</span></li>
-						<li class="li_menu" id="my_works"><span class="pointer">Мои работы</span></li>
+						<li class="li_menu li_menu_first" id="about_me"><span class="pointer">Обо мне</span></li>
+						<li class="li_menu li_menu_first" id="my_works"><span class="pointer">Мои работы</span></li>
 						<li class="li_menu" id="contact_me"><span class="pointer">Связаться со мной</span></li>
 					</ul>
 					<ul class="contacts">
-						<li class="li_contacts" id="contacts"><span class="pointer">Контакты</span></li>
-						<li class="li_contacts" id="email"><span href="#" class="pointer">kds2108@list.ru</span></li>
-						<li class="li_contacts" id="telephone"><span href="#" class="pointer">+7 900 631 9943</span></li>
-						<li class="li_contacts" id="skype"><span href="#" class="pointer">kds_2108</span></li>
+						<li class="li_contacts" id="contacts"><span class="pointer move_text_first">Контакты</span></li>
+						<li class="li_contacts" id="email">
+							<div class="case_img move"><i class="sprite sprite-email"></i></div>
+							<span class="pointer move_text">kds2108@list.ru</span>
+						</li>
+						<li class="li_contacts" id="telephone">
+							<div class="case_img move"><i class="sprite sprite-tel"></i></div>
+							<span class="pointer move_text">+7 900 631 9943</span>
+						</li>
+						<li class="li_contacts" id="skype">
+							<div class=" case_img"><img src="/images/skype.png" alt=""></div>
+							<span class="pointer move_text">kds_2108</span>
+						</li>
+<!-- 						<li class="li_contacts">
+							<span class="pointer move_text">kds_2108fhxfh</span>
+						</li>
+							<li class="li_contacts">
+							<span class="pointer move_text">zdgzkds_2108</span>
+						</li> -->
 					</ul>
 				</div>
 				
 				<div class="content-area">
 					<div class="main-information">
 						<div class="basic_info">Основная информация</div>
-						<div id="line3"><img src="/images/line3.png" alt=""></div>
+						<div class="line3"><img src="/images/line3.png" alt=""></div>
 						<div class="photo"></div>
 						<div class="information_list">
-							<p class="text"><span class="bold">Меня зовут: </span> Кузнецова Дарья Сергеевна</p>
-							<p class="text"><span class="bold">Мой возраст: </span> 28 лет</p>
-							<p class="text"><span class="bold">Мой город: </span> Санкт-Петербург, Россия</p>
-							<p class="text"><span class="bold">Моя специализация: </span> FRONTEND разработчик</p>
+							<p class="text"><span class="bold">Меня зовут:&nbsp;&nbsp;&nbsp;</span> Кузнецова Дарья Сергеевна</p>
+							<p class="text"><span class="bold">Мой возраст:&nbsp;&nbsp;&nbsp;</span> 28 лет</p>
+							<p class="text"><span class="bold">Мой город:&nbsp;&nbsp;&nbsp;</span> Санкт-Петербург, Россия</p>
+							<p class="text"><span class="bold">Моя специализация:&nbsp;&nbsp;&nbsp;&nbsp;</span>FRONTEND разработчик</p>
 							<div class="text_div">
-								<p class="bold first_bold">Ключевые навыки: </p>
+								<p class="bold first_bold">Ключевые навыки:</p>
 								<p class="inline">
 									<span class="skills">html</span>
-									<span class="skills">css</span>
+									<span class="skills" id="css">css</span>
 									<span class="skills">javascript</span>
 									<span class="skills">gulp</span>
 									<span class="skills">git</span>
 								</p>
 							</div>
-							
 						</div>
 					</div>
 					
-					<div class="work-experience"></div>
+					<div class="work-experience">
+						<div class="basic_info exp">Опыт работы</div>
+						<div class="line3"><img src="/images/line4.png" alt=""></div>
+						<div class="work-list">
+							<div class="case_img"><i class="sprite sprite-case"></i></div>
+							<div class="text_area text_area1">
+								<p class="first_string">Отель "Чеховъ" - администратор</p>
+								<p class="second_string">Ноябрь 2011 - Август 2015</p>
+							</div>
+						</div>
+						<div class="work-list">
+							<div class="case_img"><i class="sprite sprite-case"></i></div>
+							<div class="text_area text_area1">
+								<p class="first_string">Клуб спортивного покера "Ставка"</p>
+								<p class="second_string">Апрель 2008 - Декабрь 2010</p>
+							</div>
+						</div>
+					</div> 
+
+					<div class="education">
+						<div class="basic_info">Образование</div>
+						<div class="line3 edu"><img src="/images/line4.png" alt=""></div>
+						<div class="work-list">
+							<div class="case_img">
+								<i class="sprite sprite-hat"></i>
+							</div>
+							<div class="text_area text_area2">
+								<p class="first_string edu_first_string">Высшее. УрФЮИ, г. Екатеринбург</p>
+								<p class="second_string">Сентябрь 2010 - Июнь 2013</p>
+							</div>
+						</div>
+						<div class="work-list">
+							<div class="case_img">
+								<i class="sprite sprite-list"></i>
+							</div>
+							<div class="text_area text_area2" id="left">
+								<p class="first_string edu_first_string">Курсы Loftschool.ru</p>
+								<p class="second_string">Январь 2016 - по настоящее время</p>
+							</div>
+						</div>
+					</div>
+				</div>
 					
-					<div class="education"></div>
-				</div>	
-			</div>
-		</div>
-
+			</div>	
 	</div>
-
-	<!--<footer class="footer">
+	<!-- <footer class="footer">
 		<div class="container-footer">
+
 			<div class="lock">
-				<a href="#" class="locked">
-					<img src="images/locked.png" alt="Войти">
-				</a>
+				<a href="/login.html" class="locked"></a>
 			</div>
 			<div class="copyright">&copy; 2016. Это сайт Дарьи Кузнецовой, пожалуйста, не копируйте и не воруйте его</div>
 		</div>
-	</footer>-->
+	</footer> -->
 
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
+
 </html>
 

@@ -120,10 +120,10 @@
 
 @font-face {
     font-family: 'fira_sanslight';
-    src: url('firasans-light.eot');
-    src: url('firasans-light.eot?#iefix') format('embedded-opentype'),
-         url('firasans-light.woff') format('woff'),
-         url('firasans-light.ttf') format('truetype');
+    src: url('/fonts/firasans-light.eot');
+    src: url('/fonts/firasans-light.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-light.woff') format('woff'),
+         url('/fonts/firasans-light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
