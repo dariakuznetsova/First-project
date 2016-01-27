@@ -295,40 +295,58 @@ body {
 
 /*Ховер*/
 
-.pic .zoom-wrapper {
-	position: absolute;
-	width: 100%;
-	top: 55px;
-    text-align: center;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+.hover_img {
+	position: relative;
 }
 
-.zoom-wrapper:hover {
+.project-img {
+	position: absolute;
+	left: -0.5px;
+}
+
+.pic .zoom-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    text-align: center;
+    transform: scale(0);
+    -ms-transform: scale (0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    -moz-transform: scale(0);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+}
+
+.pic:hover .zoom-wrapper {	
 	transform: scale(1);
 	-webkit-transform: scale(1);
 }
 
-.zoom-link {
-	font-size: 12px;
-    border: 1px solid #eff3f7;
-    color: black;
+.pic .zoom-link {
+	font-family: 'fira_sansbook';
+    font-size: 12px;
+    border: 2px solid #eff3f7;
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 0 4px;
 }
 
-.project-img:hover {
-	background-image: url("/images/pic_hover.png");
-	/*-moz-opacity: 0.50;
-	opacity:0.50;
-	filter: alpha(opacity=50);*/
+.pic:hover .project-img{
+	-moz-opacity: 0.4;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;;
 }
 
-.hover-img {
-	background-color: rgb( 108, 108, 164);
+.pic:hover {
+	background-color: #065984;
 }
 
 
@@ -341,15 +359,12 @@ body {
 	width: 100%;
 	font-family: 'fira_sanslight', sans-serif;
 	font-size: 13px;
-	/*min-width: 970px;*/
 }
 
 .container-footer {
 	background: #eff3f7 url("/images/line-gradient.png") top center no-repeat;
 	min-width: 1200px;
 	height: 80px;
-	/*margin: auto;
-	width: 660px;*/
 }
 
 .lock_and_copyright {
