@@ -17,14 +17,9 @@ body {
 	min-width: 970px;
 	min-height: 100%;
 	width: 100%;
-	height: auto!important;
+	/*height: auto!important;*/
 	display: table;
-}
-
-.wrapper:after {
-	content: "";
-	height: 80px;
-	display: block;
+	margin-bottom: 93px;
 }
 
 
@@ -349,13 +344,8 @@ body {
 
 .text_area2 {
 	margin-left: 19px;
-	margin-bottom: -7px;
+	margin-bottom: -8px;
 }
-
-/*.text-area2 {
-	margin-left: 27px;
-	margin-bottom: 100px;
-}*/
 
 .edu {
 	margin-bottom: -1px;
@@ -368,6 +358,7 @@ body {
 #left {
 	margin-left: 14px;
 }
+
 
 /*Футер*/
 
@@ -382,26 +373,43 @@ body {
 }
 
 .container-footer {
-	background: #eff3f7 url("/images/line1.png") top center no-repeat;
+	background: #eff3f7 url("/images/line-gradient.png") top center no-repeat;
 	min-width: 1200px;
 	height: 80px;
-	position: relative;
-	padding-top: 23px;
 	/*margin: auto;
 	width: 660px;*/
 }
 
-.copyright {
-	margin: 0 180px;
-	padding-top: 7px;
-	text-align: center;
+.lock_and_copyright {
+	margin: auto;
+	width: 900px;
+	position: relative;
 }
 
 .lock {
 	position: absolute;
 	top: 26px;
-	left: 20px;
+	left: 2px;
 }
+
+.copyright {
+	position: absolute;
+	left: 255px;
+	top: 31px;
+}
+
+
+
+/*.copyright {
+	margin: 0 20px;
+	text-align: center;
+}*/
+
+/*.lock {
+	position: absolute;
+	top: 26px;
+	left: 227px;
+}*/
 
 .locked {
 	display: block;
