@@ -99,10 +99,6 @@ body {
 	padding-left: 27px;
 }
 
-.li_menu_first {
-	background: url("/images/line-menu.png") bottom center no-repeat;
-}
-
 .pointer {
 	cursor: pointer;
 	text-decoration: none;
@@ -115,22 +111,17 @@ body {
 	color: #3ba8c0;
 }
 
-/*#my_works, #contact_me {
-	color: #959aa8;
-}
-
-#my_works:hover, #contact_me:hover {
-	color: #3ba8c0;
-}*/
-
-#a1 {
+#a2 {
 	color: white;
 }
 
 #about_me {
-	background: #3ba8c0;
 	font-size: 23px;
 	border-radius: 4px 4px 0px 0px;	
+}
+
+#my_works {
+	background: #3ba8c0;
 }
 
 
@@ -213,6 +204,10 @@ body {
 	margin-right: 8px;
 }
 
+.case_img {
+	display: inline-block;
+}
+
 
 /*Article*/
 
@@ -221,156 +216,119 @@ body {
 	float: right;
 }
 
-.main-information, .work-experience, .education {
+.main-information {
 	background-color: #eff3f7;
 	border-radius: 5px;
 	padding-top: 13px;
 	margin-bottom: 26px;
-}
-
-.main-information {
-	min-height: 320px;
+	min-height: 840px;
 }
 
 .basic_info {
 	font-size: 27px;
 	color: #3ba8c0;
-	padding-left: 22px;
-	margin-bottom: -3px;
-}
-
-.exp {
+	padding-left: 26px;
 	padding-top: 1px;
+	margin-bottom: -4px;
 }
 
 .line3 {
-	margin-bottom: 4px;
+	margin-bottom: 19px;
 }
 
-.photo {
-	margin-left: 56px;
-	margin-right: 19px;
-	margin-top: 23px;
-	border-radius: 75px;
-	width: 150px;
-	height: 150px;
-	border: 3px solid #3ba8c0;
+.container-works {
+	padding-left: 8px;
+}
+
+.works {
+	display: inline-block;
+	margin-right: 13px;
+	margin-left: 13px;
+}
+
+.pic, .dotted {
+	width: 183px;
+	height: 129px;
+	border: 2px solid #3ba8c0;
+	border-radius: 5px;
 	overflow: hidden;
-	background-image: url("/images/pic1.jpg");
-	background-position: 33% 0%;
-	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+
+.works_dotted {
 	vertical-align: top;
-
 }
 
-.information_list {
-	margin-top: -4px;
-	width: 378px;
-	display: inline-block;
+.dotted {
+	border-style: dotted;
+	position: relative;
 }
 
-.text {
-	color: #4a545d;
-	line-height: 17.5px;
-	margin-bottom: 14px;
-	font-family: "fira_sansbook", sans-serif;
-	font-size: 15px;
+#dotted {
+	position: absolute;
+	left: 22%;
+	bottom: 27%;
 }
 
-.bold {
-	font-family: "fira_sansmedium", sans-serif;
-	font-size: 17px;
-	color: #4a545d;
-}
-
-.skills {
+.site_name {
 	text-align: center;
-	border-radius: 3px;
-	color: white;
-	font-family: "ProximaNovaCond-Semibold", sans-serif;
-	font-size: 14px;
-	padding: 2px 14px 1px 14px;
-	margin-right: 3.5px;
-	background: #2e8ca2;
-	box-shadow: inset 0px 9px 0px #3ba8c0;
-	display: inline-block;
-	margin-top: 2px; 
+	font-family: 'fira_sanslight_italic', sans-serif;
+	font-size: 13px;
+	color: #3ba8c0;
+	margin-top: 6px;
 }
 
-#css {
+.project_information {
+	font-family: 'fira_sanslight', sans-serif;
 	font-size: 15px;
-	margin-bottom: 6px;
-	margin-right: 3px;
+	color: #606972;
+	text-align: center;
+	margin-top: 4px;
 }
 
-.text_div {
-	margin-top: -20px;
+.preview {
+	margin-top: -21px;
+	margin-bottom: 39px;
 }
 
-.first_bold {
-	margin-right:10px;
-	width: 160px;
-	display: inline-block;
-	vertical-align: top;
+
+/*Ховер*/
+
+.pic .zoom-wrapper {
+	position: absolute;
+	width: 100%;
+	top: 55px;
+    text-align: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
-.inline {
-	width: 200px;
-	margin-top: 22px;
-	display: inline-block;
+.zoom-wrapper:hover {
+	transform: scale(1);
+	-webkit-transform: scale(1);
 }
 
-.work-experience {
-	min-height: 235px;
+.zoom-link {
+	font-size: 12px;
+    border: 1px solid #eff3f7;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 4px;
 }
 
-.work-list {
-	width: 550px;
-	margin-left: 58px;
-	margin-top: -7.5px;
+.project-img:hover {
+	background-image: url("/images/pic_hover.png");
+	/*-moz-opacity: 0.50;
+	opacity:0.50;
+	filter: alpha(opacity=50);*/
 }
 
-.case_img, .text_area {
-	display: inline-block;
-}
-
-.text_area1 {
-	margin-left: 27px;
-	margin-bottom: -10px;
-}
-
-.first_string {
-	font-family: "fira_sansbook", sans-serif;
-	font-size: 17px;
-	color: #4a545d;
-	margin-bottom: -20px;
-}
-
-.second_string {
-	font-family: "fira_sanslight", sans-serif;
-	font-size: 15px;
-	color: #4a545d;
-}
-
-.education {
-	min-height: 233px;
-}
-
-.text_area2 {
-	margin-left: 19px;
-	margin-bottom: -8px;
-}
-
-.edu {
-	margin-bottom: -1px;
-}
-
-.edu_first_string {
-	margin-bottom: -19px;
-}
-
-#left {
-	margin-left: 14px;
+.hover-img {
+	background-color: rgb( 108, 108, 164);
 }
 
 

@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'fira_sanstwo';
     src: url('firasans-two.eot');
     src: url('firasans-two.eot?#iefix') format('embedded-opentype'),
@@ -26,19 +26,19 @@
          url('firasans-eight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
-@font-face {
+/*@font-face {
     font-family: 'fira_sanseight_italic';
-    src: url('firasans-eightitalic.eot');
-    src: url('firasans-eightitalic.eot?#iefix') format('embedded-opentype'),
-         url('firasans-eightitalic.woff') format('woff'),
-         url('firasans-eightitalic.ttf') format('truetype');
+    src: url('/fonts/firasans-eightitalic.eot');
+    src: url('/fonts/firasans-eightitalic.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-eightitalic.woff') format('woff'),
+         url('/fonts/firasans-eightitalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
-@font-face {
+/*@font-face {
     font-family: 'fira_sanshair';
     src: url('firasans-hair.eot');
     src: url('firasans-hair.eot?#iefix') format('embedded-opentype'),
@@ -116,7 +116,7 @@
          url('firasans-extralightitalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 @font-face {
     font-family: 'fira_sanslight';
@@ -130,10 +130,10 @@
 
 @font-face {
     font-family: 'fira_sanslight_italic';
-    src: url('firasans-lightitalic.eot');
-    src: url('firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
-         url('firasans-lightitalic.woff') format('woff'),
-         url('firasans-lightitalic.ttf') format('truetype');
+    src: url('/fonts/firasans-lightitalic.eot');
+    src: url('/fonts/firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-lightitalic.woff') format('woff'),
+         url('/fonts/firasans-lightitalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -148,7 +148,7 @@
     font-style: normal;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'fira_sansbook_italic';
     src: url('firasans-bookitalic.eot');
     src: url('firasans-bookitalic.eot?#iefix') format('embedded-opentype'),
@@ -176,7 +176,7 @@
          url('firasans-regularitalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 @font-face {
     font-family: 'fira_sansmedium';
@@ -188,7 +188,7 @@
     font-style: normal;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'fira_sansmedium_italic';
     src: url('firasans-mediumitalic.eot');
     src: url('firasans-mediumitalic.eot?#iefix') format('embedded-opentype'),
@@ -315,7 +315,7 @@
          url('firamono-regular.woff') format('woff'),
          url('firamono-regular.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal;*/
 }
 
 @font-face {
