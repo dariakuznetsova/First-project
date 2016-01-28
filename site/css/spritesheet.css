@@ -1,7 +1,7 @@
 /*Первая страница*/
 
 .sprite {
-    background-image: url(/images/spritesheet.png);
+    background-image: url("/images/spritesheet.png");
     background-repeat: no-repeat;
     display: block;
 }
@@ -97,7 +97,7 @@
 
 /*Вторая страница*/
 
-.sprite2 {
+/*.sprite2 {
     background-image: url(/images/spritesheet2.png);
     background-repeat: no-repeat;
     display: block;
@@ -133,3 +133,4 @@
     background-position: -241px -188px;
 }
 
+*/

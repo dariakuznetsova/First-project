@@ -230,6 +230,7 @@ body {
 	padding-left: 26px;
 	padding-top: 1px;
 	margin-bottom: -4px;
+	font-weight: normal;
 }
 
 .line3 {
@@ -244,6 +245,7 @@ body {
 	display: inline-block;
 	margin-right: 13px;
 	margin-left: 13px;
+	vertical-align: top;
 }
 
 .pic, .dotted {
@@ -265,6 +267,14 @@ body {
 	position: relative;
 }
 
+.dotted:hover {
+	background-color: #d3f2fd;
+	transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;;
+}
+
 #dotted {
 	position: absolute;
 	left: 22%;
@@ -277,6 +287,7 @@ body {
 	font-size: 13px;
 	color: #3ba8c0;
 	margin-top: 6px;
+	width: 183px;
 }
 
 .project_information {
@@ -285,6 +296,7 @@ body {
 	color: #606972;
 	text-align: center;
 	margin-top: 4px;
+	width: 183px;
 }
 
 .preview {

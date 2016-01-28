@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background: url(/images/pattern.png);
+    background: url("/images/pattern.png");
     width: 100%;
     font-family: 'fira_sansbook', sans-serif;
 }
@@ -317,6 +317,22 @@ body {
 	font-size: 13px;
 	color: #48cbe8;
 	padding-left: 7px;
+}
+
+::-webkit-input-placeholder {
+	color: #48cbe8;
+}
+
+::-moz-placeholder {
+	color: #48cbe8;
+}
+
+:-moz-placeholder {
+	color: #48cbe8;
+}
+
+:-ms-input-placeholder {
+	color: #48cbe8;
 }
 
 .input1 {

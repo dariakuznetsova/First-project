@@ -17,7 +17,6 @@ body {
 	min-width: 970px;
 	min-height: 100%;
 	width: 100%;
-	/*height: auto!important;*/
 	display: table;
 	margin-bottom: 93px;
 }
@@ -114,14 +113,6 @@ body {
 .pointer1:hover {
 	color: #3ba8c0;
 }
-
-/*#my_works, #contact_me {
-	color: #959aa8;
-}
-
-#my_works:hover, #contact_me:hover {
-	color: #3ba8c0;
-}*/
 
 #a1 {
 	color: white;
@@ -327,23 +318,33 @@ body {
 .work-list {
 	width: 550px;
 	margin-left: 58px;
-	margin-top: -7.5px;
+	margin-top: -7px;
+	min-height: 100%;
+	position: relative;
 }
 
 .case_img, .text_area {
 	display: inline-block;
 }
 
+.case_pic {
+	position: absolute;
+	top: 10%;
+	margin-top: -3px;
+}
+
 .text_area1 {
-	margin-left: 27px;
+	margin-left: 68px;
 	margin-bottom: -10px;
+	width: 467px;
+	vertical-align: middle;
 }
 
 .first_string {
 	font-family: "fira_sansbook", sans-serif;
 	font-size: 17px;
 	color: #4a545d;
-	margin-bottom: -20px;
+	margin-bottom: -21px;
 }
 
 .second_string {
@@ -357,8 +358,26 @@ body {
 }
 
 .text_area2 {
-	margin-left: 19px;
-	margin-bottom: -8px;
+	margin-left: 68px;
+	margin-bottom: -11px;
+	width: 467px;
+	padding-top: 0px;
+}
+
+.work-list2 {
+	padding-top: 18px;
+	position: relative;
+}
+
+.hat_pic {
+	position: absolute;
+	margin-top: -10px;
+	top: 50%;
+}
+
+.list_pic {
+	position: absolute;
+	top:15%;
 }
 
 .edu {
@@ -367,11 +386,12 @@ body {
 
 .edu_first_string {
 	margin-bottom: -19px;
+	margin-top: auto;
 }
 
-#left {
+/*#left {
 	margin-left: 14px;
-}
+}*/
 
 
 /*Футер*/
