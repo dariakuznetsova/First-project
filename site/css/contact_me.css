@@ -48,6 +48,7 @@ body {
 	margin: 0;
 	font-size: 0px;
 	margin-top: -4px;
+	padding-left: 0px;
 }
 
 .social-item {
@@ -236,7 +237,7 @@ body {
 	border-bottom: 17px solid #67dffa;
 	padding-top: 42px;
 	padding-left: 60px;
-	margin-bottom: 20.5px;
+	margin-bottom: 34px;
 }
 
 
@@ -251,6 +252,10 @@ body {
 	display: inline-block;
 }
 
+.first_form {
+	margin-bottom: 6px;
+}
+
 .fieldset {
 	border: 0px;
 }
@@ -259,16 +264,13 @@ body {
 	margin-bottom: -13px;
 }
 
-.fieldset2 {
-	margin-bottom: -3px;
-}
-
 .fieldset3 {
-	margin-bottom: -5px;
+	margin-top: -5px;
+	margin-bottom: -4px;
 }
 
 .third_form {
-	margin-top: 17px;
+	margin-top: -2px;
 	vertical-align: middle;
 	position: relative;
 }
@@ -304,7 +306,7 @@ body {
 }
 
 .label_p {
-	margin-bottom: -18px;
+	margin: 0 auto;
 }
 
 .input, .cap_pic {
@@ -347,6 +349,7 @@ body {
 .textarea {
 	padding-top: 9px;
 	max-width: 402px;
+	resize: none;
 }
 
 .input2 {
@@ -366,7 +369,10 @@ body {
 	background-color: #48cbe8;
 	box-shadow: 0 3px 0px #3ba8c0;
 	width: 137px;
-	/*margin-left: 0px;*/
+}
+
+.submit:hover {
+	box-shadow: 0 3px 0px #48cbe8;
 }
 
 .clear {
@@ -374,6 +380,10 @@ body {
 	background-color: #849db5;
 	box-shadow: 0 3px 0px #687b8f;
 	margin-right: 1px;
+}
+
+.clear:hover {
+	box-shadow: 0 3px 0px #849db5;
 }
 
 .button {
@@ -385,6 +395,7 @@ body {
 	height: 30px;
 	border: none;
 	padding: auto 20px;
+	outline: none;
 }
 
 

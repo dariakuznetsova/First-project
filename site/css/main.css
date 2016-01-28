@@ -47,6 +47,7 @@ body {
 	margin: 0;
 	font-size: 0px;
 	margin-top: -4px;
+	padding-left: 0px;
 }
 
 .social-item {
@@ -226,12 +227,22 @@ body {
 .basic_info {
 	font-size: 27px;
 	color: #3ba8c0;
+	width: auto;
+	margin-bottom: -15px;
+}
+
+.border_line {
+	display: inline-block;
+	border-bottom: 2px solid #3ba8c0;
+	margin-top: 0px;
 	padding-left: 22px;
-	margin-bottom: -3px;
+	padding-bottom: 12px;
+	padding-right: 24px;
 }
 
 .exp {
 	padding-top: 1px;
+	margin-bottom: -22px;
 }
 
 .line3 {
@@ -247,11 +258,15 @@ body {
 	height: 150px;
 	border: 3px solid #3ba8c0;
 	overflow: hidden;
-	background-image: url("/images/pic1.jpg");
-	background-position: 33% 0%;
 	display: inline-block;
 	vertical-align: top;
+	position: relative;
+}
 
+.me {
+	position: absolute;
+	left: -32px;
+	top: -1px;
 }
 
 .information_list {
@@ -272,43 +287,47 @@ body {
 	font-family: "fira_sansmedium", sans-serif;
 	font-size: 17px;
 	color: #4a545d;
+	white-space: pre;
 }
 
 .skills {
-	text-align: center;
-	border-radius: 3px;
 	color: white;
 	font-family: "ProximaNovaCond-Semibold", sans-serif;
 	font-size: 14px;
-	padding: 2px 14px 1px 14px;
 	margin-right: 3.5px;
-	background: #2e8ca2;
-	box-shadow: inset 0px 9px 0px #3ba8c0;
 	display: inline-block;
-	margin-top: 2px; 
+	margin-bottom: 6px;
 }
 
-#css {
-	font-size: 15px;
-	margin-bottom: 6px;
-	margin-right: 3px;
+.inl_bl {
+	text-align: center;
+	border-radius: 3px;
+	padding: 2px 14.5px 1px 14.5px;
+	background: #2e8ca2;
+	box-shadow: inset 0px 9px 0px #3ba8c0;
 }
 
 .text_div {
-	margin-top: -20px;
+	margin-top: -2px;
 }
 
 .first_bold {
-	margin-right:10px;
+	margin-right:9px;
 	width: 160px;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.inline {
+.skills_list {
+	vertical-align: top;
 	width: 200px;
-	margin-top: 22px;
 	display: inline-block;
+}
+
+.inline {
+	margin-top: 4px;
+	display: inline-block;
+	padding-left: 0px
 }
 
 .work-experience {
@@ -357,6 +376,10 @@ body {
 	min-height: 233px;
 }
 
+.edu {
+	margin-bottom: -25px;
+}
+
 .text_area2 {
 	margin-left: 68px;
 	margin-bottom: -11px;
@@ -380,18 +403,10 @@ body {
 	top:15%;
 }
 
-.edu {
-	margin-bottom: -1px;
-}
-
 .edu_first_string {
 	margin-bottom: -19px;
 	margin-top: auto;
 }
-
-/*#left {
-	margin-left: 14px;
-}*/
 
 
 /*Футер*/
