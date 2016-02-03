@@ -49,3 +49,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'fira_sansregular';
+    src: url('/fonts/firasans-regular.eot');
+    src: url('/fonts/firasans-regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-regular.woff') format('woff'),
+         url('/fonts/firasans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

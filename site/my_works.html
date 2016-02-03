@@ -133,8 +133,65 @@
 								</div>
 							</div>
 							<div class="works works_dotted">
-								<div class="dotted"><a href=""><img src="/images/add-project.png" id="dotted" alt="Добавить проект"></a></div>
+								<a href="" class="a_add_pr"><div class="dotted"><img src="/images/add-project.png" id="dotted" alt="Добавить проект"></div></a>
+								<br/><br/><br/><br/><br/>
+							<!-- Форма добавления нового проекта -->
+								
+								<div class="form_wrapper">
+									<div class="add">	
+										<div class="add_text">Добавление проекта</div>
+										<img src="/images/close.png" class="close" alt="закрыть">
+									</div>
+									<form class="form">
+										<fieldset class="field_set">
+											<p class="all_p p_first"><label class="" for="name">Название проекта</label></p>
+											<p class="all_p"><input type="text" placeholder="Введите название" class="inputs" id="name"/></p>
+										</fieldset>
+										<fieldset class="field_set">
+											<p class="all_p p_first"><label class="" for="picture">Картинка проекта</label></p>
+											<div class="form_div">
+											<p class="all_p second_p"><textarea type="text" placeholder="Загрузите изображение" class="inputs second_input" id="picture"></textarea></p>
+											<img class="cloud" src="/images/cloud.png" alt="Добавьте проект">
+											<p class="download"><input type="file" onchange="dwnlFn();" class="download_input" id="dwnl"/></p>
+											</div>
+											
+										</fieldset>
+										<fieldset class="field_set">
+											<p class="all_p p_first"><label class="" for="url">URL проекта</label></p>
+											<p class="all_p"><input type="text" placeholder="Добавьте ссылку" class="inputs" id="url" /></p>
+										</fieldset>
+										<fieldset class="field_set">
+											<p class="all_p p_first"><label class="" for="description">Описание</label></p>
+											<p class="all_p"><textarea type="text" placeholder="Пара слов о Вашем проекте" class="inputs last_input" id="description"></textarea></p>
+										</fieldset>
+										<fieldset class="field_set last_fieldset">
+											<button class="add_button" type="submit">Добавить</button>
+										</fieldset>
+									</form>	
+
+									<!-- Проект успешно добавлен -->
+									<div class="added">
+										<div class="added_green">
+											<p class="added_p">
+												<span class="added_span">Ура!</span>
+												<img src="/images/close2.png" alt="Закрыть" class="close2">
+											</p>
+											<p class="added_p">Проект успешно добавлен.</p>
+										</div>
+									</div>
+								</div>	
+
+	                                <!-- Тултипы -->
+	                            <div class="tooltips first_tooltip">введите название</div>
+	                            <div class="tooltips second_tooltip">изображение</div>
+	                            <div class="tooltips third_tooltip">ссылка на проект</div>
+	                            <div class="tooltips fourth_tooltip">описание проекта</div>
+								
 							</div>
+
+							
+							
+							
 						</div>
 				</div>
 			</div>
@@ -154,6 +211,8 @@
 	</footer>
 
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/jquery/bPopup/jquery.bpopup.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

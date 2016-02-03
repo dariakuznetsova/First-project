@@ -243,6 +243,7 @@ body {
 
 .container-works {
 	padding-left: 8px;
+	position: relative;
 }
 
 .works {
@@ -264,6 +265,7 @@ body {
 
 .works_dotted {
 	vertical-align: top;
+	/*position: relative;*/
 }
 
 .dotted {
@@ -364,6 +366,263 @@ body {
 .pic:hover {
 	background-color: #065984;
 }
+
+
+/*Попап*/
+
+.form_wrapper {
+	width: 362px;
+	min-height: 493px;
+	background-color: #eff3f7;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 5px 10px 1px #6b7781;
+	position: relative;
+	margin: auto;
+	position: relative;
+	/*display: none;*/
+}
+
+.add {
+	height: 53px;
+	background-color: #48cbe8;
+	border-bottom: 9px solid #67dffa;
+	font-family: 'fira_sansregular';
+	font-size: 25px;
+	color: white;
+	padding-left: 13px;
+	padding-top: 5px;
+	margin-bottom: 6px;
+	border-radius: 5px 5px 0px 0px;
+
+}
+
+.add_text {
+	display: inline;
+}
+
+.close {
+	float: right;
+	margin-right: 12px;
+	margin-top: 5px;
+}
+
+.form {
+	padding-left: 9px;
+}
+
+.field_set {
+	border: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 6px;
+}
+
+.all_p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.p_first {
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	color: #959aa8;
+	margin-left: -1px;
+	margin-bottom: 1px;
+}
+
+.second_p {
+	display: inline-block;
+	vertical-align: bottom;
+	height: 41px;
+}
+
+.download {
+	display: inline-block;
+	width: 52px;
+	height: 41px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	position: absolute;
+	left: 268px;
+	bottom: 0px;
+}
+
+.form_div {
+	width: 321px;
+	height: 41px;
+	position: relative;
+}
+
+.cloud {
+	vertical-align: bottom;
+	margin-left: -5px;
+}
+
+.inputs {
+	width: 320px;
+	height: 41px;
+	border: 1px solid #48cbe8;
+	border-radius: 3px 3px 3px 3px;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	color: #48cbe8;
+	background-color: white;
+	outline: none;
+	padding-left: 8px;
+}
+
+::-webkit-input-placeholder {
+	color: #48cbe8;
+}
+
+::-moz-placeholder {
+	color: #48cbe8;
+}
+
+:-moz-placeholder {
+	color: #48cbe8;
+}
+
+:-ms-input-placeholder {
+	color: #48cbe8;
+}
+
+.second_input {
+	width: 269px;
+	resize: none;
+	padding-top: 9px;
+}
+
+.download_input {
+	width: 52px;
+	height: 41px;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.last_input {
+	height: 111px;
+	padding-top: 9px;
+	resize: none;
+}
+
+.add_button {
+	width: 140px;
+	height: 30px;
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+	color: white;
+	border: none;
+	box-shadow: 0 3px 0px #3ba8c0;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #48cbe8;
+	margin-top: 1px;
+	outline: none;
+}
+
+.add_button:hover {
+	box-shadow: 0 3px 0px #48cbe8;
+}
+
+.last_fieldset {
+	text-align: center;
+	margin-right: 10px;
+}
+
+
+/*"Проект успешно добавлен!"*/
+
+.added {
+	height: 104px;
+	width: 362px;
+	background-color: #eff3f7;
+	box-shadow: 0 2px 12px 1px #b5b9ba;
+	padding-top: 22px;
+	position: absolute;
+	top: 38.5%;
+	display: none;
+}
+
+.added_green {
+	height: 61px;
+	width: 320px;
+	background-color: #b8e1ce;
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+	margin: 0 auto;
+	border: 1px solid #49bb7b;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.added_p {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #49bb7b;
+	margin-left: 8px;
+	height: 32px;
+	position: relative;
+}
+
+.added_span {
+	font-size: 25px;
+	padding-left: 1px;
+}
+
+.close2 {
+	position: absolute;
+	left: 295px;
+	top: 4px;
+	cursor: pointer;
+}
+
+
+/*Тултипы*/
+
+.tooltips {
+	position: absolute;
+	background-color: #f97e76;
+	font-family: 'fira_sansbook';
+	font-size: 13px;
+	color: white;
+	padding-left: 14px;
+	padding-right: 14px;
+	height: 26px;
+	padding-top: 2px;
+	border-radius: 2px 2px 2px 2px;
+	/*display: none;*/
+}
+
+.tooltips:after {
+	content: "";
+	position: absolute;
+	border-left: 10px solid #f97e76;
+    border-top: 10px solid rgba(255, 241, 190, 0);
+    border-bottom: 10px solid rgba(255, 241, 190, 0);
+    right: -6px;
+    top: 3px;
+}
+
+.first_tooltip {
+	top: 95px;
+	left: 15px;
+}
+
+/*.second_tooltip {
+	top: 170px;
+	left: 44px;
+}
+
+.third_tooltip {
+	left: 19px;
+	top: 245px;
+}
+
+.fourth_tooltip {
+	top: 350px;
+	left: 15px;
+}*/
 
 
 /*Футер*/
