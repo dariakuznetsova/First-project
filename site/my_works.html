@@ -21,7 +21,7 @@
 
 		<header class="header">
 			<div class="container-header">
-				<a href="http://www.dariakuznetsova.ru" class="logo">
+				<a href="http://www.dariakuznetsova.ru" class="logo" title="Привет">
 					<img src="images/logo.png" alt="Логотип" class="logo-img">
 				</a>
 				<ul class="socials">
@@ -134,35 +134,35 @@
 							</div>
 							<div class="works works_dotted">
 								<a href="" class="a_add_pr"><div class="dotted"><img src="/images/add-project.png" id="dotted" alt="Добавить проект"></div></a>
-								<br/><br/><br/><br/><br/>
+
 							<!-- Форма добавления нового проекта -->
 								
 								<div class="form_wrapper">
 									<div class="add">	
 										<div class="add_text">Добавление проекта</div>
-										<img src="/images/close.png" class="close" alt="закрыть">
+										<img src="/images/close.png" class="close b-close" alt="закрыть">
 									</div>
 									<form class="form">
 										<fieldset class="field_set">
 											<p class="all_p p_first"><label class="" for="name">Название проекта</label></p>
-											<p class="all_p"><input type="text" placeholder="Введите название" class="inputs" id="name"/></p>
+											<p class="all_p"><input type="text" placeholder="Введите название" class="inputs" id="name" data-tooltip-position="left" data-tooltip-text="введите название"/></p>
 										</fieldset>
 										<fieldset class="field_set">
 											<p class="all_p p_first"><label class="" for="picture">Картинка проекта</label></p>
 											<div class="form_div">
-											<p class="all_p second_p"><textarea type="text" placeholder="Загрузите изображение" class="inputs second_input" id="picture"></textarea></p>
+											<p class="all_p second_p"><textarea type="text" placeholder="Загрузите изображение" class="inputs second_input" id="picture" data-tooltip-position="left" data-tooltip-text="изображение"></textarea></p>
 											<img class="cloud" src="/images/cloud.png" alt="Добавьте проект">
-											<p class="download"><input type="file" onchange="dwnlFn();" class="download_input" id="dwnl"/></p>
+											<p class="download"><input type="file" onchange="dwnlFn();" class="download_input inputs" id="dwnl"/></p>
 											</div>
 											
 										</fieldset>
 										<fieldset class="field_set">
 											<p class="all_p p_first"><label class="" for="url">URL проекта</label></p>
-											<p class="all_p"><input type="text" placeholder="Добавьте ссылку" class="inputs" id="url" /></p>
+											<p class="all_p"><input type="text" placeholder="Добавьте ссылку" class="inputs" id="url" data-tooltip-position="left" data-tooltip-text="ссылка на проект"></p>
 										</fieldset>
 										<fieldset class="field_set">
 											<p class="all_p p_first"><label class="" for="description">Описание</label></p>
-											<p class="all_p"><textarea type="text" placeholder="Пара слов о Вашем проекте" class="inputs last_input" id="description"></textarea></p>
+											<p class="all_p"><textarea type="text" placeholder="Пара слов о Вашем проекте" class="inputs last_input" id="description" data-tooltip-position="left" data-tooltip-text="описание проекта"></textarea></p>
 										</fieldset>
 										<fieldset class="field_set last_fieldset">
 											<button class="add_button" type="submit">Добавить</button>
@@ -179,19 +179,14 @@
 											<p class="added_p">Проект успешно добавлен.</p>
 										</div>
 									</div>
-								</div>	
 
-	                                <!-- Тултипы -->
-	                            <div class="tooltips first_tooltip">введите название</div>
-	                            <div class="tooltips second_tooltip">изображение</div>
-	                            <div class="tooltips third_tooltip">ссылка на проект</div>
-	                            <div class="tooltips fourth_tooltip">описание проекта</div>
-								
-							</div>
+									<!-- <div class="tooltips first_tooltip">введите название</div>
+	                            	<div class="tooltips second_tooltip">изображение</div>
+	                            	<div class="tooltips third_tooltip">ссылка на проект</div>
+	                            	<div class="tooltips fourth_tooltip">описание проекта</div> -->
 
-							
-							
-							
+								</div>					
+							</div>		
 						</div>
 				</div>
 			</div>

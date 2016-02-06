@@ -1,64 +1,105 @@
+
 // bPopup
 
 (function($) {
+
 	$(function() {
-        // From jQuery v.1.7.0 use .on() instead of .bind()
     	$('.a_add_pr').bind('click', function(e) {
         	e.preventDefault();
    			$('.form_wrapper').bPopup();
    		});
     });
+
 })(jQuery);
 
 
-
-// Загрузка файла 
+// Загрузка файла. Выведение названия файла в поле input text из input file
 
   function dwnlFn() {
-	document.getElementById('picture').value = document.getElementById('dwnl').value.replace(/.+[\\\/]/, "");
- };
+  	var picture = document.getElementById('picture'),
+  		dwnl = document.getElementById('dwnl');
 
+  	picture.value = dwnl.value.replace(/.+[\\\/]/, "");
+
+	$(".second_input").css({"background-color":"white", "border-color":"#48cbe8"});
+ };
 
 
 // Валидация
 
-/*$(document).ready(function() {
-	$('.inputs[value!=""]').qtip({
-		content: {
-			text:'Error';
-		};
-	}); 
-});*/
+var validationFn = (function () {
 
+  var init = function () {
+        _setUpListners();
+      },
+      form = $(".form");
+      
+  var _setUpListners = function ()  {
+        $(form).on('submit', function(e) {
+			e.preventDefault();
+			checkForm(form);
+		});
 
-(function() {
-	var inputs = $(".inputs");
+		$('.close').on('click', function() {
+			$(form).trigger('reset');
+			$(".inputs").css({"background-color":"white", "border-color":"#48cbe8"});
 
-	$(".add_button").on('click', function(e) {
-		e.preventDefault();
-		$(inputs).each(function(index,elem){
-			if($(elem.val)) {
-				$('.added').show();
-				$('.close2').on('click', function() {
-					$('.added').hide();
-					$(inputs).val('');
-				});
+		});
+      
+		$(form).on("focus", '.error', function(){
+			$(this).css({"background-color":"white", "border-color":"#48cbe8"});
+			$(this).remove('.tooltips');
+		});
+    };
+
+   function checkForm (form) {
+		var form = $(form),
+			inputs = form.find('.inputs');
+
+		form.removeClass('error');
+		$(inputs).each(function (index,elem){
+
+			if($(elem).val() == "") {
+		 		$(elem).css({"background-color":"#fad6d4", "border-color":"#f97e76"});
+		 		$(elem).addClass('error');
+		 		createTooltip(elem);
 		 	};
-		 });
-	});
+		});
+
+ 		if(!$('.error').length) {
+			$('.added').show();
+			$(form).trigger('reset');
+		};
+		
+	};		
+	
+
+	function createTooltip (elem) {
+	
+		var position = $(elem).data('tooltip-position');
+		var text = $(elem).data('tooltip-text');
+		
+		if(position == 'left') {
+			var tooltip = ('<div class="tooltips tooltip_left">' + text + '</div>');			
+		}else if(position =='right') {
+			var tooltip = ('<div class="tooltips tooltip_right">' + text + '</div>');
+		};
+
+		$(elem).parent().append(tooltip);
+		
+	};
+
+
+
+	$('.close2').on('click', function() {
+		$('.added').hide(); 	
+	});	
+  
+  return {
+      init: init
+  };
+  
+  
 })();
 
-
-/*(function () {
-	var form = $('.form'),
-		inputs = $('.input');
-
-	form.on('submit', fiunction(e){
-		e.preventDefault();
-		$(inputs).each(function(index,elem)){
-			if($(elem.val()) {
-				var 
-			}
-		}
-	})
-})*/
+validationFn.init();

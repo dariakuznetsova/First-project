@@ -265,7 +265,6 @@ body {
 
 .works_dotted {
 	vertical-align: top;
-	/*position: relative;*/
 }
 
 .dotted {
@@ -378,8 +377,7 @@ body {
 	box-shadow: 0 5px 10px 1px #6b7781;
 	position: relative;
 	margin: auto;
-	position: relative;
-	/*display: none;*/
+	display: none;
 }
 
 .add {
@@ -404,6 +402,7 @@ body {
 	float: right;
 	margin-right: 12px;
 	margin-top: 5px;
+	cursor: pointer;
 }
 
 .form {
@@ -420,6 +419,9 @@ body {
 .all_p {
 	margin-top: 0px;
 	margin-bottom: 0px;
+	position: relative;
+	width: 321px;
+	white-space: nowrap;
 }
 
 .p_first {
@@ -434,6 +436,7 @@ body {
 	display: inline-block;
 	vertical-align: bottom;
 	height: 41px;
+	width: 321px;
 }
 
 .download {
@@ -451,12 +454,16 @@ body {
 .form_div {
 	width: 321px;
 	height: 41px;
+	margin-left: 0px;
 	position: relative;
 }
 
 .cloud {
 	vertical-align: bottom;
 	margin-left: -5px;
+	position: absolute;
+	left: 273px;
+	top: 0px;
 }
 
 .inputs {
@@ -489,7 +496,7 @@ body {
 }
 
 .second_input {
-	width: 269px;
+	width: 320px;px;
 	resize: none;
 	padding-top: 9px;
 }
@@ -581,6 +588,7 @@ body {
 /*Тултипы*/
 
 .tooltips {
+	display: inline-block;
 	position: absolute;
 	background-color: #f97e76;
 	font-family: 'fira_sansbook';
@@ -591,7 +599,8 @@ body {
 	height: 26px;
 	padding-top: 2px;
 	border-radius: 2px 2px 2px 2px;
-	/*display: none;*/
+	right: 102%;
+	top: 28%;
 }
 
 .tooltips:after {
@@ -603,26 +612,6 @@ body {
     right: -6px;
     top: 3px;
 }
-
-.first_tooltip {
-	top: 95px;
-	left: 15px;
-}
-
-/*.second_tooltip {
-	top: 170px;
-	left: 44px;
-}
-
-.third_tooltip {
-	left: 19px;
-	top: 245px;
-}
-
-.fourth_tooltip {
-	top: 350px;
-	left: 15px;
-}*/
 
 
 /*Футер*/
