@@ -600,7 +600,8 @@ body {
 	padding-top: 2px;
 	border-radius: 2px 2px 2px 2px;
 	right: 102%;
-	top: 28%;
+	top: 50%;
+	transform: translateY(-14px);
 }
 
 .tooltips:after {

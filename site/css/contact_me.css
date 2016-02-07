@@ -225,6 +225,7 @@ body {
 	background-color: #eff3f7;
 	border-radius: 5px;
 	min-height: 840px;
+	position: relative;
 }
 
 .blue_div {
@@ -319,6 +320,7 @@ body {
 	font-size: 13px;
 	color: #48cbe8;
 	padding-left: 7px;
+	outline:none;
 }
 
 ::-webkit-input-placeholder {
@@ -397,6 +399,104 @@ body {
 	padding: auto 20px;
 	outline: none;
 }
+
+.all_p {
+	position: relative;
+	white-space: nowrap;
+}
+
+/*"Проект успешно добавлен!"*/
+
+.added {
+	height: 104px;
+	width: 362px;
+	background-color: #eff3f7;
+	box-shadow: 0 2px 12px 1px #b5b9ba;
+	padding-top: 22px;
+	position: absolute;
+	top: 28%;
+	left: 145px;
+	display: none;
+}
+
+.added_green {
+	height: 61px;
+	width: 320px;
+	background-color: #b8e1ce;
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+	margin: 0 auto;
+	border: 1px solid #49bb7b;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.added_p {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #49bb7b;
+	margin-left: 8px;
+	height: 32px;
+	position: relative;
+}
+
+.added_span {
+	font-size: 25px;
+	padding-left: 1px;
+}
+
+.close2 {
+	position: absolute;
+	left: 295px;
+	top: 4px;
+	cursor: pointer;
+}
+
+/*Тултипы*/
+
+.tooltips {
+	display: inline-block;
+	position: absolute;
+	background-color: #f97e76;
+	font-family: 'fira_sansbook';
+	font-size: 13px;
+	color: white;
+	padding-left: 14px;
+	padding-right: 14px;
+	height: 26px;
+	padding-top: 2px;
+	border-radius: 2px 2px 2px 2px;
+}
+
+.tooltip-left {
+	right: 102%;
+	top: 50%;
+	transform: translateY(-14px);
+}
+
+.tooltip-left:after {
+	content: "";
+	position: absolute;
+	border-left: 10px solid #f97e76;
+    border-top: 10px solid rgba(255, 241, 190, 0);
+    border-bottom: 10px solid rgba(255, 241, 190, 0);
+    right: -6px;
+    top: 3px;
+}
+
+.tooltip-right {
+	left:104%;
+	top: 50%;
+	transform: translateY(-14px);
+}
+
+.tooltip-right:before {
+	content: "";
+	position: absolute;
+	border-right: 10px solid #f97e76;
+    border-top: 10px solid rgba(113, 101, 58, 0);
+    border-bottom: 10px solid rgba(113, 101, 58, 0);
+    left: -6px;
+    top: 3px;
 
 
 /*Футер*/
