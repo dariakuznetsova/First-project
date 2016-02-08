@@ -53,6 +53,7 @@ body {
 
 .social-item {
 	margin-left: 23px;
+	width: 47px;
 }
 
 .sprite-git {
@@ -197,13 +198,12 @@ body {
 }
 
 #skype img {
-	width: 58%;
-	margin-bottom: -7px;
+	margin-bottom: -4px;
 	margin-left: 4px;
 }
 
 #skype div {
-	margin-right: 8px;
+	margin-right: 18px;
 }
 
 .case_img {
@@ -600,8 +600,13 @@ body {
 	padding-top: 2px;
 	border-radius: 2px 2px 2px 2px;
 	right: 102%;
-	top: 50%;
-	transform: translateY(-14px);
+	top: 20%;
+	/*transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
+	-webkit-transform: translateY(-3px);
+	-o-transform: translateY(-3px);
+	-moz-transform: translateY(-3px);
+*/
 }
 
 .tooltips:after {
@@ -610,6 +615,8 @@ body {
 	border-left: 10px solid #f97e76;
     border-top: 10px solid rgba(255, 241, 190, 0);
     border-bottom: 10px solid rgba(255, 241, 190, 0);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     right: -6px;
     top: 3px;
 }

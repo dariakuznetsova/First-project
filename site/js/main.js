@@ -9,6 +9,10 @@
  			if ($('.added')) {
          		 $('.added').hide();  
         	}; 
+        	$(".inputs").css({"background-color":"white", "border-color":"#48cbe8"});
+			$('.tooltips').remove(); 
+			$(this).removeClass('error');
+
    			$('.form_wrapper').bPopup();
    		});
     });
@@ -42,20 +46,25 @@ var validationFn = (function () {
       
   var _setUpListners = function ()  {
         	$(form).on('submit', function(e) {
-					e.preventDefault();
+				if(e.preventDefault){
+    				e.preventDefault();
+				}else{
+    				e.returnValue = false; // Условие для IE8
+				};
+
 					checkForm(form);
 				});
 
 			$('.close').on('click', function() {
 				$(form).trigger('reset');
-				$(".inputs").css({"background-color":"white", "border-color":"#48cbe8"});
-				$('.tooltips').remove(); 
-				$(this).removeClass('error');
+				// $(".inputs").css({"background-color":"white", "border-color":"#48cbe8"});
+				// $('.tooltips').remove(); 
+				// $(this).removeClass('error');
         	});  
 
 			$('body').on('click', '.close2',function() {
-				$('.added').hide(); 	
-			});	   
+				$('.added').hide();
+			});	 
 
 			$(form).on("keydown", '.error', function(){ 
 				$(this).css({"background-color":"white", "border-color":"#48cbe8"});
@@ -94,6 +103,7 @@ var validationFn = (function () {
 		};
 
 		$(elem).parent().append(tooltip); 
+		$('#description').next('.tooltips').css({'right':'102%', 'top':'32%'});
 	};
   
   
@@ -118,7 +128,12 @@ var validationFn2 = (function () {
       
   var _setUpListners = function ()  {
         	$(form).on('submit', function(e) {
-					e.preventDefault();
+					
+        		if(e.preventDefault){
+    				e.preventDefault();
+				}else{
+    				e.returnValue = false; // Условие для IE8
+				};
 					checkForm(form);
 				});
 
@@ -164,10 +179,12 @@ var validationFn2 = (function () {
 				$(elem).removeClass('tooltip-right');
 				var tooltip1 = ('<div class="tooltips tooltip-left">' + text + '</div>');
 				$(elem).parent().append(tooltip1); 
+				$('#third_inp').next('.tooltip-left').css({'right':'101.5%', 'top':'42%'});
 			}if(position == 'right'){
 				$(elem).removeClass('tooltip-left');
 				var tooltip2 = ('<div class="tooltips tooltip-right">' + text + '</div>');
 				$(elem).parent().append(tooltip2);
+				$('#fourth_inp').next('.tooltip-right').css({'left':'104%', 'top':'12%'});
 			};
 	
 	};

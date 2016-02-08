@@ -53,6 +53,7 @@ body {
 
 .social-item {
 	margin-left: 23px;
+	width: 47px;
 }
 
 .sprite-git {
@@ -200,13 +201,12 @@ body {
 }
 
 #skype img {
-	width: 58%;
-	margin-bottom: -7px;
+	margin-bottom: -4px;
 	margin-left: 4px;
 }
 
 #skype div {
-	margin-right: 8px;
+	margin-right: 18px;
 }
 
 .case_img {
@@ -468,9 +468,14 @@ body {
 }
 
 .tooltip-left {
-	right: 102%;
-	top: 50%;
-	transform: translateY(-14px);
+	right: 103%;
+	top: 20%;
+	/*transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
+	-webkit-transform: translateY(-3px);
+	-o-transform: translateY(-3px);
+	-moz-transform: translateY(-3px);
+	*/
 }
 
 .tooltip-left:after {
@@ -479,14 +484,20 @@ body {
 	border-left: 10px solid #f97e76;
     border-top: 10px solid rgba(255, 241, 190, 0);
     border-bottom: 10px solid rgba(255, 241, 190, 0);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     right: -6px;
     top: 3px;
 }
 
 .tooltip-right {
 	left:104%;
-	top: 50%;
-	transform: translateY(-14px);
+	top: 24%;
+	/*transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
+	-webkit-transform: translateY(-3px);
+	-o-transform: translateY(-3px);
+	-moz-transform: translateY(-3px);*/
 }
 
 .tooltip-right:before {
@@ -495,9 +506,11 @@ body {
 	border-right: 10px solid #f97e76;
     border-top: 10px solid rgba(113, 101, 58, 0);
     border-bottom: 10px solid rgba(113, 101, 58, 0);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     left: -6px;
     top: 3px;
-
+}
 
 /*Футер*/
 

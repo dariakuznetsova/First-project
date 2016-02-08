@@ -52,6 +52,7 @@ body {
 
 .social-item {
 	margin-left: 23px;
+	width: 47px;
 }
 
 .sprite-git {
@@ -196,13 +197,12 @@ body {
 }
 
 #skype img {
-	width: 58%;
-	margin-bottom: -7px;
+	margin-bottom: -4px;
 	margin-left: 4px;
 }
 
 #skype div {
-	margin-right: 8px;
+	margin-right: 18px;
 }
 
 
@@ -267,6 +267,7 @@ body {
 	position: absolute;
 	left: -1px;
 	top: -2px;
+	border-radius: 75px;
 }
 
 .information_list {
