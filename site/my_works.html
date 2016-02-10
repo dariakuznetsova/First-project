@@ -150,9 +150,9 @@
 										<fieldset class="field_set">
 											<p class="all_p p_first"><label class="" for="picture">Картинка проекта</label></p>
 											<div class="form_div">
-											<p class="all_p second_p"><textarea type="text" placeholder="Загрузите изображение" class="inputs second_input" id="picture" data-tooltip-position="left" data-tooltip-text="изображение"></textarea></p>
+											<p class="all_p second_p"><textarea type="text" placeholder="Загрузите изображение" class="inputs second_input" id="picture" data-tooltip-position="left" data-tooltip-text="изображение" readonly></textarea></p>
 											<img class="cloud" src="/images/cloud.png" alt="Добавьте проект">
-											<p class="download"><input type="file" onchange="dwnlFn();" class="download_input inputs" id="dwnl"/></p>
+											<p class="download"><input type="file" onchange="download_fn.init();" class="download_input inputs" id="dwnl"/></p>
 											</div>
 											
 										</fieldset>

@@ -244,7 +244,7 @@ body {
 
 /*Форма*/
 
-.contact_form {
+.form {
 	width: 427px;
 	margin: auto auto auto 113px;
 }
@@ -310,12 +310,12 @@ body {
 	margin: 0 auto;
 }
 
-.input, .cap_pic {
+.inputs, .cap_pic {
 	border: 1px solid #48cbe8;
 	border-radius: 3px;
 }
 
-.input {
+.inputs {
 	font-family: 'fira_sanslight';
 	font-size: 13px;
 	color: #48cbe8;
@@ -424,7 +424,8 @@ body {
 	width: 320px;
 	background-color: #b8e1ce;
 	font-family: 'fira_sansbook';
-	font-size: 15px;
+	color: #49bb7b;
+	font-size: 16px;
 	margin: 0 auto;
 	border: 1px solid #49bb7b;
 	border-radius: 5px 5px 5px 5px;
@@ -433,20 +434,14 @@ body {
 .added_p {
 	margin-top: 0;
 	margin-bottom: 0;
-	color: #49bb7b;
-	margin-left: 8px;
-	height: 32px;
+	margin-left: 24px;
 	position: relative;
-}
-
-.added_span {
-	font-size: 25px;
-	padding-left: 1px;
+	padding-top: 16px;
 }
 
 .close2 {
 	position: absolute;
-	left: 295px;
+	left: 278px;
 	top: 4px;
 	cursor: pointer;
 }
@@ -511,6 +506,8 @@ body {
     left: -6px;
     top: 3px;
 }
+
+
 
 /*Футер*/
 
